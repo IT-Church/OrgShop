@@ -19,7 +19,7 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import ru.yandex.yandexmapkit.*;
 import java.net.URI;
 import java.util.List;
 
@@ -34,14 +34,13 @@ TextView tw;
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ctx = this;
-
         tw=(TextView)findViewById(R.id.qwru) ;
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(ctx,"KIKOS",Toast.LENGTH_LONG).show();
+               setContentView(R.layout.map);
             }
         });
 
