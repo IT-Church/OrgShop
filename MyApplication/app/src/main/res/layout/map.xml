@@ -4,7 +4,21 @@
     android:layout_height="match_parent">
     <ru.yandex.yandexmapkit.MapView
         android:id="@+id/map"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_height="500px"
         android:apiKey="6zoAdC4i43~ek2plvJTw18mZJyKzHoc0wzgbOnc265mZXdil21czACJUbhBSxLUP1fgA3cuqquutwAWMgPpWBd5Hh6-BkMy2EGXWOCQx9Po=" />
+<EditText
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="75px" />
+
+    <EditText
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="75px" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/b1"/>
 </LinearLayout>

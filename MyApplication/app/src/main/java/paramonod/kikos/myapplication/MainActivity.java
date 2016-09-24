@@ -1,12 +1,13 @@
 package paramonod.kikos.myapplication;
 
 import android.content.Context;
-import android.net.Uri;
+import android.content.res.Resources;
+import android.graphics.Point;
 import android.os.Bundle;
-import android.os.Parcel;
-import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.util.Log;
+import android.view.Display;
+import android.view.MotionEvent;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -16,17 +17,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ImageView;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import java.util.Map;
+
 import ru.yandex.yandexmapkit.*;
-import java.net.URI;
-import java.util.List;
+import ru.yandex.yandexmapkit.utils.GeoPoint;
+import pack.*;
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-TextView tw;
+    TextView tw;
     public Context ctx;
+    public MapController mc;
+    public static Integer mutex =0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,25 +41,43 @@ TextView tw;
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ctx = this;
-        tw=(TextView)findViewById(R.id.qwru) ;
+        tw = (TextView) findViewById(R.id.qwru);
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               setContentView(R.layout.map);
+                setContentView(R.layout.map);
+                MapView mp = (MapView) findViewById(R.id.map);
+                mc = mp.getMapController();
+                mc.setPositionAnimationTo(new GeoPoint(new Adress().getP(), new Adress().getM()));
+                mc.setZoomCurrent(15);
+                Button button = (Button)findViewById(R.id.b1);
+                final EditText et1 = (EditText) findViewById(R.id.text);
+                final EditText et2 = (EditText) findViewById(R.id.text2);
+                button.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        mc.setPositionAnimationTo(new GeoPoint(
+                                Double.parseDouble(et1.getText().toString()),
+                                Double.parseDouble(et2.getText().toString())));
+                    }
+                });
             }
         });
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
-        toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-    }
+
+    DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+    ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+            this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+    drawer.setDrawerListener(toggle);
+    toggle.syncState();
+
+    NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+    navigationView.setNavigationItemSelectedListener(this);
+}
 
     @Override
     public void onBackPressed() {
