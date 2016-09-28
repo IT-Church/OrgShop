@@ -2,7 +2,13 @@ package paramonod.kikos.myapplication;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.ColorFilter;
+import android.graphics.Paint;
 import android.graphics.Point;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.util.Log;
@@ -24,6 +30,8 @@ import android.widget.TextView;
 import java.util.Map;
 
 import ru.yandex.yandexmapkit.*;
+import ru.yandex.yandexmapkit.overlay.Overlay;
+import ru.yandex.yandexmapkit.overlay.OverlayItem;
 import ru.yandex.yandexmapkit.utils.GeoPoint;
 import pack.*;
 
@@ -56,12 +64,41 @@ public class MainActivity extends AppCompatActivity
                 Button button = (Button)findViewById(R.id.b1);
                 final EditText et1 = (EditText) findViewById(R.id.text);
                 final EditText et2 = (EditText) findViewById(R.id.text2);
+
                 button.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        mc.setPositionAnimationTo(new GeoPoint(
-                                Double.parseDouble(et1.getText().toString()),
-                                Double.parseDouble(et2.getText().toString())));
+                        OverlayManager om = new OverlayManager(mc);
+                        Overlay o = new Overlay(mc);
+                        GeoPoint curG = new GeoPoint(Double.parseDouble(et1.getText().toString()), Double.parseDouble(et2.getText().toString()));
+                        final Bitmap source = BitmapFactory.decodeResource(getResources(),R.drawable.ymk_balloon_black);
+                        OverlayItem  oi= new OverlayItem(curG, new Drawable() {
+                            @Override
+                            public void draw(Canvas canvas) {
+                                Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+                                canvas.drawARGB(80,102,204,255);
+                                canvas.drawBitmap(source,360,250,paint);
+                            }
+
+                            @Override
+                            public void setAlpha(int alpha) {
+
+                            }
+
+                            @Override
+                            public void setColorFilter(ColorFilter colorFilter) {
+
+                            }
+
+                            @Override
+                            public int getOpacity() {
+                                return 0;
+                            }
+                        });
+                        o.addOverlayItem(oi);
+                        om.addOverlay(o);
+                        oi.setVisible(true);
+                        mc.setPositionAnimationTo(curG);
                     }
                 });
             }
