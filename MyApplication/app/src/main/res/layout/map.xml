@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -9,7 +10,19 @@
         android:id="@+id/map"
         android:layout_width="match_parent"
         android:layout_height="800px"
-        android:apiKey="6zoAdC4i43~ek2plvJTw18mZJyKzHoc0wzgbOnc265mZXdil21czACJUbhBSxLUP1fgA3cuqquutwAWMgPpWBd5Hh6-BkMy2EGXWOCQx9Po=" />
+        android:apiKey="6zoAdC4i43~ek2plvJTw18mZJyKzHoc0wzgbOnc265mZXdil21czACJUbhBSxLUP1fgA3cuqquutwAWMgPpWBd5Hh6-BkMy2EGXWOCQx9Po=" >
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/qwerty"
+            android:src="@drawable/ymk_find_me_drawable"
+            app:fabSize="normal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            app:backgroundTint="@android:color/white" />
+    </ru.yandex.yandexmapkit.MapView>
 
     <EditText
         android:id="@+id/text"
