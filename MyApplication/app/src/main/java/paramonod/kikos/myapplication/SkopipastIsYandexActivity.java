@@ -3,6 +3,7 @@ package paramonod.kikos.myapplication;
 import android.app.Activity;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -34,6 +35,7 @@ public class SkopipastIsYandexActivity extends Activity {
         mp = (MapView) findViewById(R.id.map);
         mc = mp.getMapController();
         om = mc.getOverlayManager();
+        om.getMyLocation().setEnabled(false);
         GeoPoint first = new GeoPoint(new Adress().getP(), new Adress().getM());
         mc.setPositionAnimationTo(first); //ориентир на Новослободская 38
         showObject(first);
@@ -52,12 +54,19 @@ public class SkopipastIsYandexActivity extends Activity {
                 showObject(gp);
             }
         });
+       FloatingActionButton fab = (FloatingActionButton)findViewById(R.id.qwerty);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                om.getMyLocation().setEnabled(om.getMyLocation().isEnabled()==true?false:true);
+            }
+        });
     }
 
     public void showObject(GeoPoint geoPoint) {
         Resources res = getResources();
         Overlay overlay = new Overlay(mc);
-        final OverlayItem object = new OverlayItem(geoPoint, res.getDrawable(R.drawable.mshop));
+        final OverlayItem object = new OverlayItem(geoPoint, res.getDrawable(R.drawable.shop));
 
         BalloonItem balloon = new BalloonItem(this, object.getGeoPoint());
         balloon.setText("Object No" + counter++);
