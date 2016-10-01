@@ -1,11 +1,13 @@
 package paramonod.kikos.myapplication;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.ColorFilter;
 import android.graphics.Paint;
+import android.graphics.PixelFormat;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -19,7 +21,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import ru.yandex.yandexmapkit.*;
 import ru.yandex.yandexmapkit.overlay.Overlay;
 import ru.yandex.yandexmapkit.overlay.OverlayItem;
@@ -51,73 +56,9 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.map);
-                mp = (MapView) findViewById(R.id.map);
-                mc = mp.getMapController();
-                mc.setPositionAnimationTo(new GeoPoint(new Adress().getP(), new Adress().getM())); //ориентир на Новослободская 38
-                mc.setZoomCurrent(20.0f);
-                Button button = (Button) findViewById(R.id.b1);
-                final EditText et1 = (EditText) findViewById(R.id.text);
-                final EditText et2 = (EditText) findViewById(R.id.text2);
-
-                button.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-
-                        mc.setPositionAnimationTo(new GeoPoint(
-
-                                Double.parseDouble(et1.getText().toString()),
-                                Double.parseDouble(et2.getText().toString())));
-                        OverlayManager om = new OverlayManager(mc);
-                        Overlay o = new Overlay(mc);
-
-                        OverlayItem oi = new OverlayItem(new GeoPoint(
-                                Double.parseDouble(et1.getText().toString()),
-                                Double.parseDouble(et2.getText().toString()
-                                )), getResources().getDrawable(R.drawable.shop));
-
-
-                        Bitmap b = BitmapFactory.decodeResource(getResources(), R.drawable.shop);
-                        new Canvas().drawBitmap(b, 360, 250, new Paint());
-
-                        GeoPoint curG = new GeoPoint(Double.parseDouble(et1.getText().toString()), Double.parseDouble(et2.getText().toString()));
-                        final Bitmap source = BitmapFactory.decodeResource(getResources(), R.drawable.ymk_zoom_plus);
-                        OverlayItem oi2 = new OverlayItem(curG, new Drawable() {
-                            @Override
-                            public void draw(Canvas canvas) {
-                                Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-                                canvas.drawRect(350,240,370,260,paint);
-                                canvas.drawCircle(360,250,40,paint);
-                                canvas.drawBitmap(source, 360, 250, paint);
-                            }
-
-                            @Override
-                            public void setAlpha(int alpha) {
-
-                            }
-
-                            @Override
-                            public void setColorFilter(ColorFilter colorFilter) {
-
-                            }
-
-                            @Override
-                            public int getOpacity() {
-                                return 0;
-                            }
-                        });
-                        o.addOverlayItem(oi2);
-                        mc.setPositionAnimationTo(curG);
-                        oi.setVisible(true);
-                        oi2.setVisible(true);
-                        o.addOverlayItem(oi);
-                        o.setVisible(true);
-                        om.addOverlay(o);
-
-                    }
-                });
-
+                Toast.makeText(ctx,"Теперь эта фича не тут",Toast.LENGTH_LONG).show();
             }
+
         });
 
 
@@ -171,7 +112,8 @@ public class MainActivity extends AppCompatActivity
             setContentView(new MapActivity(ctx));
 
         } else if (id == R.id.nav_slideshow) {
-
+            Intent i  = new Intent(ctx,SkopipastIsYandexActivity.class);
+            startActivity(i);
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {

@@ -15,6 +15,7 @@ public class MapActivity extends View{
     public MapActivity(Context context) {
         super(context);
         ctx = context;
+        requestLayout();
     }
 
     @Override
