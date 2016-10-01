@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
     <ru.yandex.yandexmapkit.MapView
         android:id="@+id/map"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_height="800px"
         android:apiKey="6zoAdC4i43~ek2plvJTw18mZJyKzHoc0wzgbOnc265mZXdil21czACJUbhBSxLUP1fgA3cuqquutwAWMgPpWBd5Hh6-BkMy2EGXWOCQx9Po=" />
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:text="55.785226"/>
+
+    <EditText
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:text="37.596921"/>
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="GoTo" />
+
 </LinearLayout>

@@ -1,32 +1,47 @@
 package paramonod.kikos.myapplication;
 
 import android.content.Context;
-import android.net.Uri;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.ColorFilter;
+import android.graphics.Paint;
+import android.graphics.PixelFormat;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.os.Parcel;
-import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ImageView;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import ru.yandex.yandexmapkit.*;
-import java.net.URI;
-import java.util.List;
+import ru.yandex.yandexmapkit.overlay.Overlay;
+import ru.yandex.yandexmapkit.overlay.OverlayItem;
+import ru.yandex.yandexmapkit.utils.GeoPoint;
+import pack.*;
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-TextView tw;
+    TextView tw;
     public Context ctx;
+    public MapController mc;
+    public static Integer mutex = 0;
+    public static int x;
+    public static int y;
+    public static MapView mp;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,15 +49,18 @@ TextView tw;
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ctx = this;
-        tw=(TextView)findViewById(R.id.qwru) ;
+        tw = (TextView) findViewById(R.id.qwru);
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               setContentView(R.layout.map);
+                Toast.makeText(ctx,"Теперь эта фича не тут",Toast.LENGTH_LONG).show();
             }
+
         });
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -56,12 +74,7 @@ TextView tw;
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
+        super.onBackPressed();
     }
 
     @Override
@@ -96,9 +109,11 @@ TextView tw;
             tw.setText("Camera");
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
+            setContentView(new MapActivity(ctx));
 
         } else if (id == R.id.nav_slideshow) {
-
+            Intent i  = new Intent(ctx,SkopipastIsYandexActivity.class);
+            startActivity(i);
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
@@ -107,8 +122,7 @@ TextView tw;
 
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
+
         return true;
     }
 }
