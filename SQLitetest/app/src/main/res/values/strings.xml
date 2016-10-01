@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SQLite test</string>
+    <string name="large_text">
+        "OrgShop"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="test">test</string>
+</resources>
