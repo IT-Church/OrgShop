@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\res\\merged\\debug\\xml\\ymk_map_layers.xml",
+        "source": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\exploded-aar\\ru.yandex\\yandexmapkit\\2.5.0\\res\\xml\\ymk_map_layers.xml"
+    },
+    {
+        "merged": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\res\\merged\\debug\\xml\\global_tracker.xml",
+        "source": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\exploded-aar\\ru.yandex\\yandexmapkit\\2.5.0\\res\\xml\\global_tracker.xml"
+    }
+]

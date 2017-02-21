@@ -39,4 +39,8 @@ public class OverlayGeoCode extends Overlay implements GeoCodeListener{
         return true;
     }
 
+    @Override
+    public int compareTo(Object o) {
+        return 0;
+    }
 }

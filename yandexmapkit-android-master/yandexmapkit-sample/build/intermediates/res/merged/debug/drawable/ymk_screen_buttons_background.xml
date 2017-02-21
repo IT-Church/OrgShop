@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" >
+    <solid android:color="#FFFFFFFF"/>
+    <stroke
+        android:width="1px"
+        android:color="#81858d" />
+</shape>
+<!-- From: file:/Users/mksaint13/Documents/work/yandexmapkit/res/drawable/ymk_screen_buttons_background.xml -->

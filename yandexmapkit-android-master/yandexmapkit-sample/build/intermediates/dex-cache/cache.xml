@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Varvara\Downloads\OrgShop\OrgShop\yandexmapkit-android-master\yandexmapkit-sample\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="7d88394ee117f61d3da300f313e3d4975c907a81">
+        <dex dex="C:\Users\Varvara\Downloads\OrgShop\OrgShop\yandexmapkit-android-master\yandexmapkit-sample\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_f85d21e49b577d09877f0727aaac4c37671c9608\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Varvara\Downloads\OrgShop\OrgShop\yandexmapkit-android-master\yandexmapkit-sample\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="C:\Users\Varvara\Downloads\OrgShop\OrgShop\yandexmapkit-android-master\yandexmapkit-sample\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.1.1_5ab44ff8805ea1c1ba02763a9d27e6f9edea20ac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Varvara\Downloads\OrgShop\OrgShop\yandexmapkit-android-master\yandexmapkit-sample\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="C:\Users\Varvara\Downloads\OrgShop\OrgShop\yandexmapkit-android-master\yandexmapkit-sample\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.1.1_cb726eb21bc98b2a3798c33d7ead87f3b6aa3e3b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Varvara\Downloads\OrgShop\OrgShop\yandexmapkit-android-master\yandexmapkit-sample\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="C:\Users\Varvara\Downloads\OrgShop\OrgShop\yandexmapkit-android-master\yandexmapkit-sample\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.1.1_c1f7e0aa6805f9a658149d62b5f33edc75fc2e69\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Varvara\Downloads\OrgShop\OrgShop\yandexmapkit-android-master\yandexmapkit-sample\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="7bdf8fd74885d066ccbb88f5b35427d4e98486b8">
+        <dex dex="C:\Users\Varvara\Downloads\OrgShop\OrgShop\yandexmapkit-android-master\yandexmapkit-sample\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_eb8e7fb50c535c73ae69e2357266f526dde6f948\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Varvara\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="C:\Users\Varvara\Downloads\OrgShop\OrgShop\yandexmapkit-android-master\yandexmapkit-sample\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.1.1_7e9e4419accdc4d612f2fe3066a4a4d164ea9d1f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Varvara\Downloads\OrgShop\OrgShop\yandexmapkit-android-master\yandexmapkit-sample\build\intermediates\exploded-aar\ru.yandex\yandexmapkit\2.5.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="0259397b7d0fbce2444c55f89062ab0d4f09f10b">
+        <dex dex="C:\Users\Varvara\Downloads\OrgShop\OrgShop\yandexmapkit-android-master\yandexmapkit-sample\build\intermediates\transforms\dex\debug\folders\1000\10\ru.yandex-yandexmapkit-2.5.0_b2006ab60dfdf9e59ba2b9c7b0929ce98c91c046\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Varvara\Downloads\OrgShop\OrgShop\yandexmapkit-android-master\yandexmapkit-sample\build\intermediates\exploded-aar\ru.yandex\yandexmapkit\2.5.0\jars\libs\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="76d40ca641bc4023508882e1a714fb35b741d7c5">
+        <dex dex="C:\Users\Varvara\Downloads\OrgShop\OrgShop\yandexmapkit-android-master\yandexmapkit-sample\build\intermediates\transforms\dex\debug\folders\1000\10\yandexmapkit-2.5.0-jars_5ca788661317f605bfa0af9510d13cf716ff5987\classes.dex" />
+    </item>
+
+</items>

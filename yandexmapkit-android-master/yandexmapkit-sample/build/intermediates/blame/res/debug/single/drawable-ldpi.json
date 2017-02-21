@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ymk_balloon_tail_black.png",
+        "source": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\exploded-aar\\ru.yandex\\yandexmapkit\\2.5.0\\res\\drawable-ldpi\\ymk_balloon_tail_black.png"
+    },
+    {
+        "merged": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ymk_zoom_plus.png",
+        "source": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\exploded-aar\\ru.yandex\\yandexmapkit\\2.5.0\\res\\drawable-ldpi\\ymk_zoom_plus.png"
+    },
+    {
+        "merged": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ymk_sgrayvga.png",
+        "source": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\exploded-aar\\ru.yandex\\yandexmapkit\\2.5.0\\res\\drawable-ldpi\\ymk_sgrayvga.png"
+    },
+    {
+        "merged": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ymk_sredvga.png",
+        "source": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\exploded-aar\\ru.yandex\\yandexmapkit\\2.5.0\\res\\drawable-ldpi\\ymk_sredvga.png"
+    },
+    {
+        "merged": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ymk_zoom_plus_pressed.png",
+        "source": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\exploded-aar\\ru.yandex\\yandexmapkit\\2.5.0\\res\\drawable-ldpi\\ymk_zoom_plus_pressed.png"
+    },
+    {
+        "merged": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ymk_user_location_lbs.png",
+        "source": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\exploded-aar\\ru.yandex\\yandexmapkit\\2.5.0\\res\\drawable-ldpi\\ymk_user_location_lbs.png"
+    },
+    {
+        "merged": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ymk_where_am_i.png",
+        "source": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\exploded-aar\\ru.yandex\\yandexmapkit\\2.5.0\\res\\drawable-ldpi\\ymk_where_am_i.png"
+    },
+    {
+        "merged": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ymk_sgreenvga.png",
+        "source": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\exploded-aar\\ru.yandex\\yandexmapkit\\2.5.0\\res\\drawable-ldpi\\ymk_sgreenvga.png"
+    },
+    {
+        "merged": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ymk_balloon_black.9.png",
+        "source": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\exploded-aar\\ru.yandex\\yandexmapkit\\2.5.0\\res\\drawable-ldpi\\ymk_balloon_black.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ymk_user_location_gps.png",
+        "source": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\exploded-aar\\ru.yandex\\yandexmapkit\\2.5.0\\res\\drawable-ldpi\\ymk_user_location_gps.png"
+    },
+    {
+        "merged": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ymk_stricolorvga.png",
+        "source": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\exploded-aar\\ru.yandex\\yandexmapkit\\2.5.0\\res\\drawable-ldpi\\ymk_stricolorvga.png"
+    },
+    {
+        "merged": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ymk_where_am_i_pressed.png",
+        "source": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\exploded-aar\\ru.yandex\\yandexmapkit\\2.5.0\\res\\drawable-ldpi\\ymk_where_am_i_pressed.png"
+    },
+    {
+        "merged": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\icon.png",
+        "source": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\res\\drawable-ldpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ymk_zoom_minus.png",
+        "source": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\exploded-aar\\ru.yandex\\yandexmapkit\\2.5.0\\res\\drawable-ldpi\\ymk_zoom_minus.png"
+    },
+    {
+        "merged": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ymk_zoom_minus_pressed.png",
+        "source": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\exploded-aar\\ru.yandex\\yandexmapkit\\2.5.0\\res\\drawable-ldpi\\ymk_zoom_minus_pressed.png"
+    },
+    {
+        "merged": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ymk_syellowvga.png",
+        "source": "C:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\exploded-aar\\ru.yandex\\yandexmapkit\\2.5.0\\res\\drawable-ldpi\\ymk_syellowvga.png"
+    }
+]

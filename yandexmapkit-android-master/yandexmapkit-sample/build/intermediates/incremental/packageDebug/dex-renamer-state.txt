@@ -1,0 +1,7 @@
+#Tue Nov 29 07:28:19 MSK 2016
+base.0=C\:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_eb8e7fb50c535c73ae69e2357266f526dde6f948
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_f85d21e49b577d09877f0727aaac4c37671c9608\\classes.dex
+base.1=C\:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_f85d21e49b577d09877f0727aaac4c37671c9608
+file.0=C\:\\Users\\Varvara\\Downloads\\OrgShop\\OrgShop\\yandexmapkit-android-master\\yandexmapkit-sample\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_eb8e7fb50c535c73ae69e2357266f526dde6f948\\classes.dex
